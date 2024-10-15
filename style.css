@@ -5,8 +5,8 @@ body{
 }
 
 section{
-    /* height: 100vh; */
     flex: 1;
+    padding: 0 10px;
 }
 
 .hero-content{
@@ -168,7 +168,7 @@ section{
 .third-sec-box{
     display: flex;
     flex-direction: row;
-    padding: 25px;
+    padding: 15px;
 }
 
 .third-boxes{
@@ -304,6 +304,173 @@ td,th{
     font-size: 1.2rem;
 }
 
+.fifth-sec{
+    display: flex;
+    flex-direction: column;
+    color: #3a5b74;
+    padding: 10 10px;
+    background-color: #ffdc66;
+    gap: 10px;
+}
+
+.fifth-hdg{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.fifth-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        justify-content: center;
+        gap: 40px;
+       
+}
+
+.boxes-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+    border-radius: 12px;
+}
+
+.boxes-container img{
+    width: 130px;
+    height: 130px;
+}
+
+.boxes-container span{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.sixth-sec{
+    background-color: #284643;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    gap: 40px;
+}
+
+.sixth-left-sec img{
+    height: 600px;
+}
+
+.sixth-right-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-box-hdg{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.right-boxes{
+    /* display: flex; */
+    gap: 40px;
+    flex-direction: row;
+    /* background-color: #ffdc66;
+    border-radius: 50%; */
+}
+
+.right-ctnt-upper-box{
+    display: flex;
+    gap: 40px;
+}
+
+.right-sec-boxes-content{
+    background-color: #ffdc66;
+        border-radius: 50%;
+        height: 280px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+}
+
+.sixth-right-main-cnt{
+    width: 70%;
+}
+
+.right-sec-boxes-content span{
+    font-size: 2rem;
+    color: #284643;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.right-ctnt-lower-box{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.seven-section{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.seven-left-sec{
+   
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: #3a5b74;
+}
+
+.seven-left-sec span{
+   font-size: 3rem;
+   font-weight: bold;
+  
+   /* display: flex; */
+   justify-content: center;
+}
+
+.seven-left-sec p{
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   font-size: 1.1rem;
+}
+
+.seven-right-sec{
+    display: row;
+    flex-direction: column;
+    
+    padding: 10px ;
+}
+
+.seven-img-column img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    row-gap: 20px;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width:767px) {
     .large-hdg {
         font-size: 3rem;
@@ -347,6 +514,35 @@ td,th{
     font-size: 2rem;
    }
 
+   .boxes-container span{
+    font-size: 1rem;
+   }
+
+   .fifth-content{
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+   }
+
+   .sixth-sec{
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .right-ctnt-upper-box{
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   /* .right-boxes{
+    gap: 20px;
+   } */
+
+   .right-ctnt-lower-box{
+   padding-top: 20px;
+   }
+
+   .seven-section{
+    flex-direction: column;
+   }
 
 }
 
@@ -359,6 +555,23 @@ td,th{
          .scnd-left-content {
              flex-direction: column;
          }
+
+        .sixth-sec{
+          flex-direction: column;
+         }
+
+        .seven-section{
+            flex-direction: column;
+        }
+
+        .seven-img-column{
+            display: flex;
+            align-items: center;
+        }
+
+        .seven-img-column img{
+            width: 70px;
+        }
 }
 
 @media screen and (min-width:1024px) {
